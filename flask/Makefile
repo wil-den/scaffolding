@@ -1,12 +1,15 @@
 #!make
+.ONESHELL:
+
 .PHONY: update
 .PHONY: run
 .PHONY: build
 .PHONY: install
 
 update:
-	. venv/bin/activate;
-	pip freeze > requirements.txt;
+	. venv/bin/activate
+	which pip
+	pip freeze > requirements.txt
 
 run:	
 	. venv/bin/activate;
