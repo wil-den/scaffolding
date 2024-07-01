@@ -1,0 +1,16 @@
+#When creating a Python package, you must provide a pyproject.toml file containing a build-system section similar to the example below:
+
+[build-system]
+requires    =  ["setuptools"]
+build-backend   =   "setuptools.build_meta"
+
+[project]
+name    =   "flask-app"
+version =   "0.0.1"
+dynamic =   ["dependencies"] #https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html#dynamic-metadata
+
+[tool.setuptools.dynamic]
+dependencies    =  {file = ["requirements.txt"]}
+
+[project.scripts]
+flask-app = "server:run_app"

@@ -1,0 +1,2 @@
+FLASK_APP=server:create_app
+FLASK_DEBUG=True
