@@ -3,7 +3,7 @@
 </script>
 
 <main>
-<h1>Hello</h1>
+<h1 class="bg-yellow-200">Hello</h1>
 </main>
 
 <style>
